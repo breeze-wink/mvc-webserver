@@ -1,0 +1,22 @@
+2024-06-29 18:20:30 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:37 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:38 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:38 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:38 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:39 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:39 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:39 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:20:39 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:27:19 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:26 echo plugin running!
+2024-06-29 18:46:58 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 echo plugin running!
+2024-06-29 18:46:58 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:30 context input: echo_plugin request
+2024-06-29 18:47:22 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:28 echo plugin running!
+2024-06-29 18:47:22 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 context input: echo_plugin request
+2024-06-29 18:50:03 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:28 echo plugin running!
+2024-06-29 18:50:03 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 context input: echo_plugin request
+2024-06-29 18:51:14 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:28 echo plugin running!
+2024-06-29 18:51:14 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 context input: echo_plugin request
+2024-06-29 22:29:33 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:28 echo plugin running!
+2024-06-29 22:29:33 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 context input: hello Server
+2024-06-29 23:18:00 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:28 echo plugin running!
+2024-06-29 23:18:00 INFO /home/breeze/exercise/web/src/plugin/echo_plugin.cpp:29 context input: hello Server

@@ -1,0 +1,62 @@
+2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
+2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-27 14:56:10 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-29 03:17:17 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...
+2024-06-29 22:23:21 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-06-29 22:23:21 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
+2024-06-29 22:23:21 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-29 22:23:21 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 8da8f850
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=8da85220, task=8da8f850
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:52 recv: conn = 6, msg = hello Server
+2024-06-29 22:23:26 ERROR /home/breeze/exercise/web/src/engine/workflow.cpp:50 work not found: work id = 1
+2024-06-29 22:23:26 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:68 work task destroy
+2024-06-29 22:23:43 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 8da8f950
+2024-06-29 22:23:43 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=8da853f0, task=8da8f950
+2024-06-29 22:23:43 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 22:23:43 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:46 socket closed by peer : conn = 6
+2024-06-29 22:23:43 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:68 work task destroy
+2024-06-29 23:16:27 INFO /home/breeze/exercise/web/src/engine/workflow.cpp:35 load workflow success: /home/breeze/exercise/web//config/workflow.xml
+2024-06-29 23:16:27 DEBUG /home/breeze/exercise/web/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-06-29 23:16:27 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:12 create socket success!
+2024-06-29 23:16:27 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:45 socket bind success: ip = 127.0.0.1, port = 8080
+2024-06-29 23:16:27 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:56 socket listening ...
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: fd4d5af0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=fd4c9120, task=fd4d5af0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:61 msg head: cmd = 1, len = 12
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:81 msg body: len = 12, data = hello Server
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:97 work task destroy
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: fd4c7a30
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=fd4cdf90, task=fd4c7a30
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:61 msg head: cmd = 0, len = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:81 msg body: len = 0, data = 
+2024-06-29 23:18:00 ERROR /home/breeze/exercise/web/src/engine/workflow.cpp:45 work not found: work id = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:97 work task destroy
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: fd4c7830
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=fd4ce180, task=fd4c7830
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:61 msg head: cmd = 0, len = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:81 msg body: len = 0, data = 
+2024-06-29 23:18:00 ERROR /home/breeze/exercise/web/src/engine/workflow.cpp:45 work not found: work id = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:97 work task destroy
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: fd4c7870
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=fd4ce370, task=fd4c7870
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:61 msg head: cmd = 0, len = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:81 msg body: len = 0, data = 
+2024-06-29 23:18:00 ERROR /home/breeze/exercise/web/src/engine/workflow.cpp:45 work not found: work id = 0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:97 work task destroy
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: fd4c78b0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/thread/worker_thread.cpp:25 worker thread run: thread=fd4ce560, task=fd4c78b0
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:18 work task run
+2024-06-29 23:18:00 ERROR /home/breeze/exercise/web/src/Task/work_task.cpp:56 msg head length incorrect: 2
+2024-06-29 23:18:00 DEBUG /home/breeze/exercise/web/src/Task/work_task.cpp:97 work task destroy
