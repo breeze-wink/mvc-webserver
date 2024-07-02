@@ -6,6 +6,8 @@ set(engine_Dir ${CMAKE_CURRENT_SOURCE_DIR}/engine)
 set(plugin_Dir ${CMAKE_CURRENT_SOURCE_DIR}/plugin)
 set(xml_Dir ${CMAKE_CURRENT_SOURCE_DIR}/xml)
 set(task_Dir ${CMAKE_CURRENT_SOURCE_DIR}/Task)
+set(jsonParser_Dir ${CMAKE_CURRENT_SOURCE_DIR}/jsonParser)
+set(web_Dir ${CMAKE_CURRENT_SOURCE_DIR}/web)
 
 
 add_subdirectory(${utility_Dir})
@@ -15,7 +17,10 @@ add_subdirectory(${plugin_Dir})
 add_subdirectory(${xml_Dir})
 add_subdirectory(${engine_Dir})
 add_subdirectory(${task_Dir})
+add_subdirectory(${jsonParser_Dir})
+add_subdirectory(${web_Dir})
 add_subdirectory(${socketHandler_Dir})
+
 
 add_executable(Server server.cpp)
 add_executable(Client client.cpp)

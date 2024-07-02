@@ -6,3 +6,4 @@ set(test_output_path ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/test)
 
 add_subdirectory(engine_context_test)
 add_subdirectory(engine_workflow_test)
+add_subdirectory(web_parse_request)

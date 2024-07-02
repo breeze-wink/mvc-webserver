@@ -198,6 +198,8 @@ Serversocket::Serversocket(const string& ip, int port):Socket()
     // set_linger(true, 0);
     // set_keepalive();
     // set_reuse_addr();
+
+    //TODO:这里可以补一点逻辑
     bind(ip, port);
     listen(1024);
 }

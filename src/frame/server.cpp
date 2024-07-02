@@ -36,7 +36,7 @@ void Server::start()
     logger -> setLevel(static_cast<Logger::Level>(m_log_level));
 
     auto workflow = Singleton<Workflow>::Instance();
-    workflow -> load(root_path + "/config/workflow.xml");
+    workflow -> load(root_path + "config/workflow.xml");
 
     auto dispatcher = Singleton<TaskDispatcher>::Instance();
     dispatcher -> init(m_threads);
