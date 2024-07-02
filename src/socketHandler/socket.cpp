@@ -193,11 +193,11 @@ Client_socket::Client_socket(const string& ip, int port) : Socket()
 Serversocket::Serversocket(const string& ip, int port):Socket()
 {   
     set_non_blocking();
-    // set_recv_buffer(10 * 1024);
-    // set_send_buffer(10 * 1024);
-    // set_linger(true, 0);
-    // set_keepalive();
-    // set_reuse_addr();
+    set_recv_buffer(10 * 1024);
+    set_send_buffer(10 * 1024);
+    set_linger(true, 0);
+    set_keepalive();
+    set_reuse_addr();
 
     //TODO:这里可以补一点逻辑
     bind(ip, port);

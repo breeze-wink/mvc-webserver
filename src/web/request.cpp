@@ -1,4 +1,5 @@
 #include "request.h"
+#include "response.h"
 #include <cstring>
 #include <string>
 #include <vector>
@@ -96,6 +97,7 @@ int Request::parse_header(const char* buf, int len)
 int Request::parse_body(const char* buf, int len)
 {
     //TODO
+    return 0;
 }
 
 

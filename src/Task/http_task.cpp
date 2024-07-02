@@ -1,4 +1,6 @@
 #include "http_task.h"
+#include "Logger.h"
+#include "response.h"
 #include "socket.h"
 #include "socket_handler.h"
 #include "request.h"
@@ -53,10 +55,11 @@ void HttpTask::run()
 
     Request req;
     req.parse_header(buf, len);
-    req.show();
-
     
-    socket.send(buf, len);
+    string resp = Response::page_not_found();
+    socket.send(resp.c_str(), resp.size());
+
+    log_debug("send : %s", resp.c_str());
 }
 
 void HttpTask::destroy()

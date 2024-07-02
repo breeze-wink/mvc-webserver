@@ -972,3 +972,576 @@ q=0.7,en-US;q=0.6,zh-TW;q=0.5
 
 2024-07-02 21:36:13 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
 2024-07-02 21:36:13 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:42:52 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-03 00:42:52 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-03 00:42:52 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-03 00:42:52 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-03 00:42:52 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306c3920
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306c5150, task=306c3920
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+GET /hello/kitty?a=10&b=20&c=30 HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306c3bf0
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306c9fb0, task=306c3bf0
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:42:55 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:42:55 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306c3c30
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306ca1a0, task=306c3c30
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 8, msg = 
+GET /hello/kitty?a=10&b=20&c=30 HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306c3c70
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306ca390, task=306c3c70
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 8, msg = 
+q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:42:56 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:42:56 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306ca410
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306ca580, task=306ca410
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+GET /hello/kitty?a=10&b=20&c=30 HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306ca600
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306ca770, task=306ca600
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:01 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306ca7f0
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306ca960, task=306ca7f0
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 8, msg = 
+GET /hello/kitty?a=10&b=20&c=30 HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306ca9e0
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306cab50, task=306ca9e0
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 8, msg = 
+q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:43:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:01 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306c3d70
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306cad40, task=306c3d70
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+GET /hello/kitty?a=10&b=20&c=30 HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 306cadc0
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=306caf30, task=306cadc0
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:21 http task run
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:53 recv: conn = 7, msg = 
+q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:43:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:64 http task destroy
+2024-07-03 00:43:31 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:63 socket hang up by peer: errno = 0, errmsg = Success
+2024-07-03 00:47:59 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-03 00:47:59 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-03 00:47:59 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-03 00:47:59 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:40 socket bind error: errno = 98, errmsg = Address already in use
+2024-07-03 00:47:59 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-03 00:52:11 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-03 00:52:11 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-03 00:52:11 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-03 00:52:11 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-03 00:52:11 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 961e920
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=9620150, task=961e920
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 7, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 961ebf0
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=9624fb0, task=961ebf0
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:50 socket closed by peer : conn = 7
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 7, msg = 
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 961ec30
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=96251a0, task=961ec30
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 8, msg = 
+GET /favicon.ico HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 961ec70
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=9625390, task=961ec70
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:50 socket closed by peer : conn = 8
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 8, msg = 
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:00 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 9625410
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=9625580, task=9625410
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 7, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 9625600
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=9625770, task=9625600
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:22 http task run
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:50 socket closed by peer : conn = 7
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:54 recv: conn = 7, msg = 
+
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 send : HTTP/1.1 404 Not Found
+Content-Type: text/html; charset: utf-8
+Content-Length: 1376
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 10rem;
+            margin: 0;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .container p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <a href="/">Go to Homepage</a>
+    </div>
+</body>
+</html>
+
+
+2024-07-03 00:54:03 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:67 http task destroy
