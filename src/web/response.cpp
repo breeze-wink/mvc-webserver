@@ -1,4 +1,5 @@
 #include "response.h"
+#include "Logger.h"
 #include "server.h"
 #include "system.h"
 #include <fstream>
@@ -78,7 +79,7 @@ void Response::json(const string& data)
 string Response::page_not_found()
 {
     auto sys = Singleton<System>::Instance();
-    string file_path = sys -> get_root_path() + "/html/404.html";
+    string file_path = sys -> get_root_path() + "/template/404.html";
     std::ifstream in(file_path);
     
     std::ostringstream content;
@@ -100,6 +101,8 @@ void Response::render(const string& file_name)
 {
     const string& template_path = Singleton<Server>::Instance() ->get_template_folder();
     const string& file_path = template_path + "/" + file_name;
+
+    log_debug("template path : %s", file_path.c_str());
 
     std::ifstream ifs(file_path);
 

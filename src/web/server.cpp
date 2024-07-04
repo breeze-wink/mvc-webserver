@@ -1,5 +1,7 @@
 #include "server.h"
 #include "../frame/server.h"
+#include "Logger.h"
+#include "class_factory.h"
 #include "response.h"
 #include "String.h"
 #include "system.h"
@@ -98,6 +100,82 @@ string Server::handle(const Request& req)
 
         return func(file_path, Type::ICO);
     }
+
+    log_debug("enter controller auto");
+
+    string classname;
+    string methodname;
+
+    auto arr = String::split(String::trim(path, " /"), '/');
+
+    log_debug("path = %s", path.c_str());
+
+    if (arr.size() == 0) //只有控制器
+    {
+        
+        classname = "Index";
+        methodname = "index";
+    }
+    else if (arr.size() == 1)
+    {
+        classname = String::capitalize(arr[0]);
+        methodname = "index";
+    }
+
+    else if (arr.size() == 2) // 一个控制器，一个方法
+    {
+        classname = String::capitalize(arr[0]);
+        methodname = arr[1];
+    }
+
+    log_debug("classname = %s, methodname = %s", classname.c_str(), methodname.c_str());
+
+    auto factory = Singleton<reflect::ClassFactory>::Instance();
+
+    if (factory -> map_is_empty())
+    {
+        log_error("something wrong happens during reflecting, class_map is empty");
+    }
+
+    auto ctrl = factory -> create_class(classname);
+
+    if (ctrl == nullptr)
+    {
+        log_error("Failed to get controller, name: %s", classname.c_str());
+        return Response::page_not_found();
+    }
+
+    auto method = factory -> get_class_method(classname, methodname);
+    if (method == nullptr)
+    {
+        log_error("Failed to get method, controller name: %s, method name: %s", classname.c_str(), methodname.c_str());
+        delete ctrl;
+        return Response::page_not_found();
+    }
+
+    log_debug("Succeed getting controller and method");
+
+    try
+    {
+        Response resp;
+        ctrl -> call(methodname, req, resp);
+        delete ctrl;
+        return resp.data();
+    }
+    catch (const std::exception& e)
+    {
+        if (ctrl)
+        {
+            delete ctrl;
+        }
+        Response resp;
+        resp.code(404);
+        resp.html(e.what());
+
+        return resp.data();
+    }
+
+    log_error("Failed to call");
     return Response::page_not_found();
 }
 

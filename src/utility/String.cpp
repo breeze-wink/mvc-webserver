@@ -64,6 +64,7 @@ std::vector<string> String::split(const string &input, const string &separator)
     }
     size_t last = 0;
     size_t index = input.find_first_of(separator, last);
+
     while(index != string::npos)
     {
         if (index != last)

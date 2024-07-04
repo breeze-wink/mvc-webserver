@@ -6,5 +6,6 @@ aux_source_directory(. DIR_SRC)
 
 add_library(${PROJECT_NAME} STATIC ${DIR_SRC})
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${jsonParser_Dir} ${utility_Dir} ${frame_Dir})
-target_link_libraries(${PROJECT_NAME} PUBLIC jsonParser utility frame)
+target_include_directories(${PROJECT_NAME} PUBLIC ${jsonParser_Dir} ${utility_Dir} ${frame_Dir} ${reflect_Dir})
+
+target_link_libraries(${PROJECT_NAME} PUBLIC jsonParser reflect frame)

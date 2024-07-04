@@ -56,11 +56,12 @@ void HttpTask::run()
 
     Request req;
     req.parse_header(buf, len);
+
+    // req.show();
     
     string resp = Singleton<web::Server>::Instance() -> handle(req);
     socket.send(resp.c_str(), resp.size());
-
-    log_debug("send : %s", resp.c_str());
+    // log_error("\n%s", resp.c_str());
 }
 
 void HttpTask::destroy()

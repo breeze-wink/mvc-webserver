@@ -9,12 +9,12 @@ using namespace breeze::utility;
 
 EchoPlugin::EchoPlugin()
 {
-    auto sys = Singleton<System>::Instance();
-    const string root_path = sys -> get_root_path();
-    auto logger = Singleton<Logger>::Instance();
-    string log_path = root_path + "log/echo_plugin.log";
-    logger -> open(log_path);
-    logger -> setConsole(false);
+    // auto sys = Singleton<System>::Instance();
+    // const string root_path = sys -> get_root_path();
+    // auto logger = Singleton<Logger>::Instance();
+    // string log_path = root_path + "log/echo_plugin.log";
+    // logger -> open(log_path);
+    // logger -> setConsole(false);
 }
 EchoPlugin::~EchoPlugin()
 {
