@@ -22,11 +22,8 @@ add_subdirectory(${web_Dir})
 add_subdirectory(${socketHandler_Dir})
 
 
-add_executable(Server server.cpp)
-add_executable(Client client.cpp)
+add_executable(Server main.cpp)
 
-target_include_directories(Server PUBLIC ${frame_Dir} ${utility_Dir})
-target_include_directories(Client PUBLIC ${socketHandler_Dir} ${utility_Dir})
+target_include_directories(Server PUBLIC ${web_Dir} ${utility_Dir})
 
 target_link_libraries(Server PUBLIC frame)
-target_link_libraries(Client PUBLIC utility socketHandler)

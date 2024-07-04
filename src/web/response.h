@@ -31,6 +31,7 @@ namespace breeze::web
         void json(const string& data);
 
         static string page_not_found();
+        void render(const string& file_name);
 
     private:
         int m_code;

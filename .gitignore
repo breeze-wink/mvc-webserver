@@ -3,3 +3,4 @@
 .cache
 *.a
 *.so
+*.log

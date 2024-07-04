@@ -2,6 +2,7 @@
 #include "Logger.h"
 #include "response.h"
 #include "socket.h"
+#include "server.h"
 #include "socket_handler.h"
 #include "request.h"
 #include <unistd.h>
@@ -56,7 +57,7 @@ void HttpTask::run()
     Request req;
     req.parse_header(buf, len);
     
-    string resp = Response::page_not_found();
+    string resp = Singleton<web::Server>::Instance() -> handle(req);
     socket.send(resp.c_str(), resp.size());
 
     log_debug("send : %s", resp.c_str());
