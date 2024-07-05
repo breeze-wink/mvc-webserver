@@ -57,6 +57,20 @@ string Server::handle(const Request& req)
 
         return resp.data();
     };
+
+    auto bin_func = [](const string& file_path, Response::Type type){
+        std::ifstream ifs(file_path, std::ios::binary);
+
+        std::ostringstream oss;
+        oss << ifs.rdbuf();
+        ifs.close();
+
+        Response resp;
+        resp.data(type, oss.str());
+
+        return resp.data();
+    };
+
     
     if (String::hasSuffix(path, ".html"))
     {
@@ -80,25 +94,25 @@ string Server::handle(const Request& req)
     {
         const string& file_path = get_static_folder() + path;
 
-        return func(file_path, Type::JPG);
+        return bin_func(file_path, Type::JPG);
     }
     else if (String::hasSuffix(path, ".png"))
     {
         const string& file_path = get_static_folder() + path;
 
-        return func(file_path, Type::PNG);
+        return bin_func(file_path, Type::PNG);
     }
     else if (String::hasSuffix(path, ".gif"))
     {
         const string& file_path = get_static_folder() + path;
 
-        return func(file_path, Type::GIF);
+        return bin_func(file_path, Type::GIF);
     }
     else if (String::hasSuffix(path, ".ico"))
     {
         const string& file_path = get_static_folder() + path;
 
-        return func(file_path, Type::ICO);
+        return bin_func(file_path, Type::ICO);
     }
 
     log_debug("enter controller auto");

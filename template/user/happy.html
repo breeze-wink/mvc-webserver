@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="gradient"></div>
+    
+    <div class="content">
+      <p class="centered">一分钟注册，享一辈子幸福！</p>
+      <hr color="black" />
+      <div class="gender-buttons"style="margin-left: 32px;">
+        <div class="button-group" >
+          <span class="wenben" class="title">性别</span>
+          <label for="man">
+            <input type="radio" id="man" checked="checked" name="sex" />
+            <img src="/man.jpg" alt="男" />男
+          </label>
+          <label for="woman">
+            <input type="radio" id="woman" name="sex" />
+            <img src="/woman.jpg" alt="女" />女
+          </label>
+        </div>
+        <div class="button-group">
+          <div class="single-button">
+            <label for="bag">
+              <input type="radio" id="bag" name="sex" />
+              沃尔玛购物袋
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="text-boxes">
+        <span class="wenben" style="margin-left: 32px;">生日</span>
+        <form action="#">
+          <input type="text" id="year" autocomplete="off" />
+          <input type="text" id="month" autocomplete="off" />
+          <input type="text" id="day" autocomplete="off" />
+        </form>
+      </div>
+      <div class="text-boxes">
+        <span class="wenben"class="title">所在地区</span>
+        <form action="#">
+          <input type="text" id="location" autocomplete="off" />
+        </form>
+      </div>
+      <div class="button-group">
+        <span class="wenben">婚姻状况</span>
+        <label for="unmarried">
+          <input type="radio" id="unmarried" checked="checked" />未婚
+        </label>
+        <label for="divorsed"> <input type="radio" id="divorsed" />离婚 </label>
+        <label for="lost"> <input type="radio" id="lost" />离婚 </label>
+      </div>
+      <div class="register-button">
+        <a href="#" style="text-decoration: none;">免费注册</a>
+      </div>
+      <div class="another">
+        <a href="#" style="text-decoration: underline;">我是会员，立即登录</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+    *{
+        font-size: 16px;
+    }
+    
+  .content {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  label {
+    display: flex;
+    align-items: center;
+  }
+  .centered {
+    text-align: center;
+  }
+  label img {
+    width: 20px; /* 调整图像的宽度 */
+    height: 20px; /* 调整图像的高度 */
+    margin-right: 5px; /* 调整图像与文本之间的间距 */
+  }
+
+  .gender-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-group {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .button-group label {
+    margin-right: 20px;
+  }
+  
+  .single-button {
+    margin-left: 42px; /* 调整第三个按钮的左边距，使其位于第一个按钮下方 */
+  }
+
+  .button-group span {
+    margin-right: 10px;
+  }
+
+  .text-boxes input[type="text"] {
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .text-boxes {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .text-boxes span {
+    margin-right: 10px;
+    text-align: right;
+    direction: rtl;
+  }
+  .register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 204, 255, 0.956);
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .another{
+    display:flex;
+  }
+</style>
