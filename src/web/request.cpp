@@ -96,7 +96,12 @@ int Request::parse_header(const char* buf, int len)
 
 int Request::parse_body(const char* buf, int len)
 {
-    //TODO
+    const string& content_type = header("Content-Type");
+    if (content_type.find("application/json") != string::npos)
+    {
+        log_debug("body data = %s", buf);
+        m_post.parse(buf, len);
+    }
     return 0;
 }
 

@@ -55,8 +55,8 @@ void HttpTask::run()
     log_debug("recv: conn = %d, msg = \n%s", m_sockfd, buf);
 
     Request req;
-    req.parse_header(buf, len);
-
+    int ret = req.parse_header(buf, len);
+    req.parse_body(buf + ret, len - ret);
     // req.show();
     
     string resp = Singleton<web::Server>::Instance() -> handle(req);

@@ -11,5 +11,6 @@ namespace breeze::app
     {
     public:
         void index(const Request& req, Response& resp);
+        void tryall(const Request& req, Response& resp);
     };
 }
