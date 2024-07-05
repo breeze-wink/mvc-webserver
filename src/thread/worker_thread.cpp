@@ -1,6 +1,7 @@
 #include "worker_thread.h"
 #include "Logger.h"
 #include "thread_pool.h"
+#include <iostream>
 
 using namespace breeze::utility;
 using namespace breeze::thread;
@@ -23,8 +24,9 @@ void WorkerThread::run()
         lck.unlock();
 
         log_debug("worker thread run: thread=%x, task=%x", this, m_task);
-        m_task->run();
-        m_task->destroy();
+
+        m_task-> run();
+        m_task-> destroy();
         m_task = nullptr;
 
         Singleton<ThreadPool>::Instance()->put(this);

@@ -1644,3 +1644,538 @@ Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
 2024-07-05 16:17:18 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:162 Succeed getting controller and method
 2024-07-05 16:17:18 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:107 template path : /home/breeze1/mvc-webserver/template/index/index.html
 2024-07-05 16:17:18 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:69 http task destroy
+2024-07-05 19:43:08 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 19:43:08 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 19:43:08 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 19:43:08 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 19:43:08 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 977742e0
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=97775560, task=977742e0
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:34 http task run
+2024-07-05 19:43:13 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:65 recv: conn = 6, msg = 
+GET /User HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:02:27 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:02:27 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:02:27 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:02:27 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:02:27 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: cb9642e0
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=cb965560, task=cb9642e0
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:34 http task run
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:65 recv: conn = 6, msg = 
+GET /User HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /User
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = User, methodname = index
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/user/index.html
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:101 http task destroy
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: cb9642e0
+2024-07-05 20:02:31 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=cb965750, task=cb9642e0
+2024-07-05 20:07:39 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:07:39 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:07:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:07:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:07:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: b0a6d2e0
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=b0a6e560, task=b0a6d2e0
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:34 http task run
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:65 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:101 http task destroy
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: b0a6d2e0
+2024-07-05 20:07:42 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=b0a6e750, task=b0a6d2e0
+2024-07-05 20:16:00 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:16:00 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:16:00 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:16:00 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:16:00 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 555712e0
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=55572560, task=555712e0
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:34 http task run
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:65 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:16:04 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:16:14 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket_handler.cpp:37 epoll wait error: errno = 4, errmsg = Interrupted system call
+2024-07-05 20:16:23 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:16:23 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:16:23 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:16:23 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:16:23 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:101 http task destroy
+2024-07-05 20:18:40 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:18:40 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:18:40 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:18:40 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:18:40 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 555712e0
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=55572560, task=555712e0
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:34 http task run
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:65 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:101 http task destroy
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 555712e0
+2024-07-05 20:18:48 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=55572750, task=555712e0
+2024-07-05 20:25:40 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:25:40 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:25:40 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:25:40 ERROR /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:40 socket bind error: errno = 98, errmsg = Address already in use
+2024-07-05 20:25:40 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:26:16 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:26:17 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:26:17 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:26:17 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:26:17 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: d7a172e0
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=d7a18560, task=d7a172e0
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:61 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:97 http task destroy
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: d7a172e0
+2024-07-05 20:26:20 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=d7a18750, task=d7a172e0
+2024-07-05 20:42:38 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:42:38 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:42:38 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:42:38 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:42:38 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 555712e0
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=55572560, task=555712e0
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:61 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:97 http task destroy
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 555712e0
+2024-07-05 20:42:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:25 worker thread run: thread=55572750, task=555712e0
+2024-07-05 20:45:57 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 20:45:57 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 20:45:57 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 20:45:57 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 20:45:57 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 27f9f2e0
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=27fa0560, task=27f9f2e0
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:61 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:97 http task destroy
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 27f9f2e0
+2024-07-05 20:46:01 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=27fa0750, task=27f9f2e0
+2024-07-05 21:06:58 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 21:06:58 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 21:06:58 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 21:06:58 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 21:06:58 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 700842e0
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=70085560, task=700842e0
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:61 recv: conn = 6, msg = 
+GET /index/hello.html HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:97 http task destroy
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 700842e0
+2024-07-05 21:07:05 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=70085750, task=700842e0
+2024-07-05 21:08:30 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 21:08:30 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 21:08:30 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 21:08:30 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 21:08:30 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 955e22e0
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=955e3560, task=955e22e0
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:61 recv: conn = 6, msg = 
+GET /User/index.html HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:97 http task destroy
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 955e22e0
+2024-07-05 21:08:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=955e3750, task=955e22e0
+2024-07-05 21:38:33 INFO /home/breeze1/mvc-webserver/src/engine/workflow.cpp:35 load workflow success: /home/breeze1/mvc-webserver/config/workflow.xml
+2024-07-05 21:38:33 DEBUG /home/breeze1/mvc-webserver/src/thread/thread_pool.cpp:15 thread pool create worker threads: 64
+2024-07-05 21:38:33 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:12 create socket success!
+2024-07-05 21:38:33 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:45 socket bind success: ip = 0.0.0.0, port = 8080
+2024-07-05 21:38:33 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:56 socket listening ...
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5ee942e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee95560, task=5ee942e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5ee942e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee95750, task=5ee942e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 6
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3040
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee95810, task=5eea3040
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 7, msg = 
+GET /styles.css HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea31e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee987c0, task=5eea31e0
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 6, msg = 
+GET /logo.jpg HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3380
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee98970, task=5eea3380
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 8, msg = 
+GET /scripts.js HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: */*
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3040
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee98b40, task=5eea3040
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 7
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3380
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee98d30, task=5eea3380
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 8
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3520
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee98f20, task=5eea3520
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 7, msg = 
+GET /background.png HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.29.130:8080/styles.css
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea3520
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee99110, task=5eea3520
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 7
+2024-07-05 21:38:39 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea31e0
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee99300, task=5eea31e0
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 6
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea4d70
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee994f0, task=5eea4d70
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 6, msg = 
+GET / HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = Index, methodname = index
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/index/index.html
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea4d70
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee996e0, task=5eea4d70
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 6
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea4f50
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee998d0, task=5eea4f50
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 7, msg = 
+GET /styles.css HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/css,*/*;q=0.1
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 6
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 8
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5130
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee99ac0, task=5eea5130
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 6, msg = 
+GET /logo.jpg HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5310
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee99cb0, task=5eea5310
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 8, msg = 
+GET /scripts.js HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: */*
+Referer: http://192.168.29.130:8080/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea4f50
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee99ea0, task=5eea4f50
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 7
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5310
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9a090, task=5eea5310
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 8
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5b80
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9a280, task=5eea5b80
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 7, msg = 
+GET /background.png HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://192.168.29.130:8080/styles.css
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5b80
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9a470, task=5eea5b80
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 7
+2024-07-05 21:38:47 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/socketHandler/socket.cpp:86 socket accept success, connfd = 7
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5d60
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9a660, task=5eea5d60
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:62 recv: conn = 7, msg = 
+GET /User HTTP/1.1
+Host: 192.168.29.130:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5
+
+
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:104 enter controller auto
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:111 path = /User
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:131 classname = User, methodname = index
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/web/server.cpp:156 Succeed getting controller and method
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/web/response.cpp:105 template path : /home/breeze1/mvc-webserver/template/user/index.html
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5d60
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9a850, task=5eea5d60
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 7
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/task_dispatcher.cpp:14 task dispatcher assign task: 5eea5130
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/thread/worker_thread.cpp:26 worker thread run: thread=5ee9aa40, task=5eea5130
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:30 http task run
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:58 socket closed by peer : conn = 6
+2024-07-05 21:39:19 DEBUG /home/breeze1/mvc-webserver/src/Task/http_task.cpp:98 http task destroy

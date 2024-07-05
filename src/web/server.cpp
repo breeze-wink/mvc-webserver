@@ -110,7 +110,7 @@ string Server::handle(const Request& req)
 
     log_debug("path = %s", path.c_str());
 
-    if (arr.size() == 0) //只有控制器
+    if (arr.size() == 0) //默认
     {
         
         classname = "Index";

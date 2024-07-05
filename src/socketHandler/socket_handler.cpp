@@ -76,7 +76,7 @@ void SocketHandler::handle(int max_conn, int timeout)
                 {
                     detach(connfd);
 
-                    auto task = TaskFactory::create(connfd);
+                    auto task = Singleton<TaskFactory>::Instance() -> create(connfd);
 
                     Singleton<TaskDispatcher>::Instance() -> assign(task);
                 }

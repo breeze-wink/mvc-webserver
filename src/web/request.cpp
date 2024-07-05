@@ -175,7 +175,7 @@ string Request::user_host() const
 
 int Request::content_length() const
 {
-    return std::stoi(header("Content_Length"));
+    return m_headers.find("Content_Length") != m_headers.end() ? std::stoi(header("Content_Length")) : 0;
 }
 
 void Request::show() const
