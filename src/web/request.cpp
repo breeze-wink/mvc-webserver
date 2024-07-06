@@ -1,6 +1,8 @@
 #include "request.h"
+#include "file_upload.h"
 #include "response.h"
 #include <cstring>
+#include <iostream>
 #include <string>
 #include <vector>
 #include "String.h"
@@ -102,6 +104,16 @@ int Request::parse_body(const char* buf, int len)
         log_debug("body data = %s", buf);
         m_post.parse(buf, len);
     }
+
+    else if (content_type.find("multipart/form-data") != std::string::npos)
+    {
+        log_debug("ready to upload");
+        FileUpload upload;
+        upload.parse(buf, len);
+
+        m_files[upload.name()] = upload;
+    }
+
     return 0;
 }
 
@@ -175,7 +187,7 @@ string Request::user_host() const
 
 int Request::content_length() const
 {
-    return m_headers.find("Content_Length") != m_headers.end() ? std::stoi(header("Content_Length")) : 0;
+    return m_headers.find("Content-Length") != m_headers.end() ? std::stoi(header("Content-Length")) : 0;
 }
 
 void Request::show() const
@@ -203,4 +215,15 @@ void Request::show() const
     log_debug("---->>");
 
     log_debug("http body: \n%s", m_body.c_str());
+}
+
+FileUpload Request::file(const string& name) const
+{
+    auto it = m_files.find(name);
+    if (it == m_files.end())
+    {
+        return FileUpload();
+    }
+
+    return it -> second;
 }

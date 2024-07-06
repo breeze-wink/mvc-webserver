@@ -85,7 +85,10 @@ void HttpTask::run()
     if (m_total_len - m_head_len >= m_body_len)
     {
         //消息接收完整
-        m_req.parse_body(m_body, m_body_len);
+        if (m_body_len > 0)
+        {
+            m_req.parse_body(m_body, m_body_len);
+        }
         string resp = Singleton<web::Server>::Instance() -> handle(m_req);
         socket.send(resp.c_str(), resp.size());
 

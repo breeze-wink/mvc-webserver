@@ -2,6 +2,7 @@
 #include <map>
 #include <string>
 #include "Json.h"
+#include "file_upload.h"
 
 using namespace breeze::json;
 
@@ -25,6 +26,7 @@ namespace breeze::web
         string get(const string& name) const;
         Json post(const string& name = "") const;
 
+        FileUpload file(const string& name) const;
         string header(const string& name) const;
         string cookie(const string& name) const;
         string path() const;
@@ -45,5 +47,6 @@ namespace breeze::web
         Json m_post;
         std::map<string, string> m_headers;
         std::map<string, string> m_cookies;
+        std::map<string, FileUpload> m_files;
     };
 }
