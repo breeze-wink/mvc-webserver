@@ -2,6 +2,7 @@
 #include "task.h"
 #include "Singleton.h"
 #include <map>
+#include <memory>
 #include <mutex>
 // #include "echo_task.h"
 // #include "work_task.h"
@@ -16,11 +17,11 @@ namespace breeze::task
         SINGLETON(TaskFactory);
     public:
     //TODO: 完善工厂逻辑
-        Task* create(int sockfd);
+        std::shared_ptr<Task> create(int sockfd);
         void  remove(int sockfd);
 
     private:
-        std::map<int, Task *> m_sock_task;
+        std::map<int, std::shared_ptr<Task>> m_sock_task;
         std::mutex m_mutex;
     };
 }

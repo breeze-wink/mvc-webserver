@@ -176,6 +176,7 @@ string Server::handle(const Request& req)
         delete ctrl;
         return resp.data();
     }
+    
     catch (const std::exception& e)
     {
         if (ctrl)

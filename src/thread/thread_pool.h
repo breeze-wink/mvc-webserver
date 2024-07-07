@@ -14,7 +14,7 @@ namespace breeze
             SINGLETON(ThreadPool);
         public:
             void create(int threads);
-            void assign(Task * task);
+            void assign(std::shared_ptr<Task> task);
 
             WorkerThread * get();
             void put(WorkerThread * thread);

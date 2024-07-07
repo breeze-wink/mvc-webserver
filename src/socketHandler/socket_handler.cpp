@@ -1,4 +1,5 @@
 #include "socket_handler.h"
+#include "Logger.h"
 #include "Singleton.h"
 #include "socket.h"
 #include "task_dispatcher.h"
@@ -32,11 +33,18 @@ void SocketHandler::handle(int max_conn, int timeout)
     while (true) 
     {
         int num = m_epoll.wait(timeout); 
-        if (num < 0)
+        if (num < 0) {
+        if (errno == EINTR) 
+        {
+            // epoll_wait 被信号中断，继续重试
+            continue;
+        } 
+        else 
         {
             log_error("epoll wait error: errno = %d, errmsg = %s", errno, strerror(errno));
             break;
         }
+    }
         else if (num == 0)
         {
             continue;
@@ -78,7 +86,7 @@ void SocketHandler::handle(int max_conn, int timeout)
 
                     auto task = Singleton<TaskFactory>::Instance() -> create(connfd);
 
-                    Singleton<TaskDispatcher>::Instance() -> assign(task);
+                    Singleton<TaskDispatcher>::Instance() -> assign(std::move(task));
                 }
 
                 

@@ -38,7 +38,7 @@ bool ThreadPool::empty()
     return m_pool.empty();
 }
 
-void ThreadPool::assign(Task *task)
+void ThreadPool::assign(std::shared_ptr<Task> task)
 {
     auto thread = get();
     thread->assign(task);

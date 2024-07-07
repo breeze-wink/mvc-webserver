@@ -24,8 +24,9 @@ void File::upload(const Request& req, Response& resp)
     file.save(path);
 
     Json json;
-    json["code"] = 0;
-    json["data"] = "上传成功";
+    json["message"] = "文件上传成功";
+    json["filename"] = file.filename();
+    json["size"] = file.size();
 
     resp.json(json.str());
 }

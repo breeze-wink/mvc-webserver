@@ -10,6 +10,7 @@ namespace breeze::utility
         SINGLETON(System);
     public:
         string get_root_path();
+        void signal_handle();
         void init();
     private:
         void core_dump();

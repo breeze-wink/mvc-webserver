@@ -3,6 +3,7 @@
 #include <list>
 #include "thread.h"
 #include "Singleton.h"
+#include <memory>
 #include <mutex>
 #include <condition_variable>
 #include "task.h"
@@ -18,13 +19,13 @@ namespace breeze
             SINGLETON(TaskDispatcher);
         public:
             void init(int threads);
-            void assign(Task* task);
-            void handle(Task* task);
+            void assign(std::shared_ptr<Task>&& task);
+            void handle(std::shared_ptr<Task>&& task);
             bool empty();
             virtual void run();
 
         protected:
-            std::list<Task *> m_queue;
+            std::list<std::shared_ptr<Task>> m_queue;
             std::mutex m_mutex;
             std::condition_variable m_cond;
         };

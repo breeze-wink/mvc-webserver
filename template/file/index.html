@@ -1,17 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
-    <title>File Upload</title>
+    <title>文件上传</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            border: 2px solid #ddd;
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        .success-message {
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 10px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .file-info {
+            color: #555;
+        }
+
+        #progressBar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 4px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        #progressBar div {
+            width: 0;
+            height: 20px;
+            background-color: #5cb85c;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>breeze web file upload</h1>
-    <p>文件上传</p>
-    <form action="/file/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file"/><br />
+    <h1>文件上传</h1>
+    <p>请选择要上传的文件：</p>
+    <form id="uploadForm" action="/file/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput"/><br />
         <input type="submit" value="上传">
     </form>
+    <div id="progressBar">
+        <div></div>
+    </div>
+    <div id="uploadResult"></div>
+    <script src="/upload.js"></script>
 </body>
 
 </html>

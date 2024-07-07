@@ -1,5 +1,6 @@
 #pragma once
 
+#include <memory>
 #include <mutex>
 #include <condition_variable>
 #include "thread.h"
@@ -16,10 +17,10 @@ namespace breeze
             ~WorkerThread();
 
             virtual void run();
-            void assign(Task * task);
+            void assign(std::shared_ptr<Task> task);
 
         private:
-            Task * m_task;
+            std::shared_ptr<Task> m_task;
             std::mutex m_mutex;
             std::condition_variable m_cond;
         };
