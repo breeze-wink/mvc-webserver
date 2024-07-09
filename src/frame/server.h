@@ -1,4 +1,5 @@
 #include "Singleton.h"
+#include <atomic>
 #include <string>
 
 using namespace breeze::utility;
@@ -11,7 +12,7 @@ namespace breeze::frame
         SINGLETON(Server);
     public:
         void start();
-
+        void signal_handle();
     private:
         string m_ip = "";
         int m_port = 0;

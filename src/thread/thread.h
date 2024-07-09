@@ -15,7 +15,7 @@ namespace breeze
             virtual void run() = 0;
 
             void start();
-            void stop();
+            void join();
 
         protected:
             static void * thread_func(void * ptr);

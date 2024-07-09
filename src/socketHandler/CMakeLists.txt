@@ -1,5 +1,5 @@
 project(socketHandler
-    DESCRIPTION "围绕Epoll，对各种功能进行封装, 最终以socketHandler类对网络IO进行操作"
+    DESCRIPTION "封装了socket，ServerSocket,ClientSocket,Epoll相关功能，最后封装SocketHandler作为外部调用的接口"
 )
 
 aux_source_directory(. DIR_SRC)

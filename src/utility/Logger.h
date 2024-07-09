@@ -1,5 +1,6 @@
 #pragma once
 #include "Singleton.h"
+#include <mutex>
 #include <string>
 #include <fstream>
 #include <ctime>
@@ -31,6 +32,7 @@ namespace breeze
         {
             SINGLETON(Logger);
         public :
+            ~Logger() = default;
             enum Level
             {
                 LOG_DEBUG = 0,
@@ -62,6 +64,7 @@ namespace breeze
             int m_len = 0;
             int m_console = true;
             static const char* s_level[LOG_COUNT];
+            std::mutex m_mutex;
         };
     }
 }

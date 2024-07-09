@@ -12,11 +12,11 @@ Thread::~Thread()
 void Thread::start()
 {
     m_thread = std::thread(Thread::thread_func, this);
-    m_thread.detach();
 }
 
-void Thread::stop()
+void Thread::join()
 {
+    m_thread.join();
 }
 
 void * Thread::thread_func(void * ptr)

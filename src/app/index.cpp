@@ -9,7 +9,7 @@ ACTION(Index, hello);
 
 void Index::index(const Request& req, Response& resp)
 {
-    resp.render("index/index.html");
+    resp.render("index/hello.html");
 }
 
 void Index::hello(const Request& req, Response& resp)

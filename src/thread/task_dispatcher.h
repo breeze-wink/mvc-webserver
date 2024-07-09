@@ -1,5 +1,6 @@
 #pragma once
 
+#include <atomic>
 #include <list>
 #include "thread.h"
 #include "Singleton.h"
@@ -22,12 +23,15 @@ namespace breeze
             void assign(std::shared_ptr<Task>&& task);
             void handle(std::shared_ptr<Task>&& task);
             bool empty();
+            bool is_stopped() const;
+            void stop();
             virtual void run();
 
         protected:
             std::list<std::shared_ptr<Task>> m_queue;
             std::mutex m_mutex;
             std::condition_variable m_cond;
+            std::atomic<bool> m_stop;
         };
     }
 }

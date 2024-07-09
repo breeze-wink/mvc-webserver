@@ -22,7 +22,6 @@ void System::init()
     {
         closedir(dirent);
     }
-    signal_handle();
 }
 
 string System::get_root_path()
@@ -55,9 +54,4 @@ void System::core_dump()
     x.rlim_max = RLIM_INFINITY;
     setrlimit(RLIMIT_CORE, &x);
 
-}
-
-void System::signal_handle()
-{
-    struct sigaction act;
 }

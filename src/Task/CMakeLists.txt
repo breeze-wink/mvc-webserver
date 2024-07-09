@@ -6,7 +6,7 @@ aux_source_directory(. DIR_SRC)
 add_library(${PROJECT_NAME} STATIC ${DIR_SRC})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${socketHandler_Dir} 
-                           ${engine_Dir} ${utility_Dir} ${ThreadPool_Dir}
-                           ${xml_Dir} ${web_Dir} ${jsonParser_Dir})
+                           ${utility_Dir} ${ThreadPool_Dir}
+                           ${web_Dir} ${jsonParser_Dir})
                            
-target_link_libraries(${PROJECT_NAME} PUBLIC engine ThreadPool)
+target_link_libraries(${PROJECT_NAME} PUBLIC  ThreadPool)

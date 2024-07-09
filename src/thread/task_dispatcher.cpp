@@ -1,6 +1,7 @@
 #include "task_dispatcher.h"
 #include "thread_pool.h"
 #include "Logger.h"
+#include <chrono>
 #include <thread>
 using namespace breeze::thread;
 
@@ -49,19 +50,34 @@ bool TaskDispatcher::empty()
     return m_queue.empty();
 }
 
+void TaskDispatcher::stop()
+{
+    m_stop.store(true);
+}
+
+bool TaskDispatcher::is_stopped() const
+{
+    return m_stop.load();
+}
+
 void TaskDispatcher::run()
 {
     log_debug("taskdispatcher thread id = %x", std::this_thread::get_id());
-    while (true)
+    while (!is_stopped())
     {
         std::unique_lock<std::mutex> lck(m_mutex);
-        while (m_queue.empty())
+
+        while (m_queue.empty() && !is_stopped())
         {
-            m_cond.wait(lck);
-            log_debug("after wake up, m_queue.size = %d", m_queue.size());
+            log_debug("task dispatcher enter wait");
+            m_cond.wait_for(lck, std::chrono::seconds(1));
+            log_debug("wake up from wait");
         }
 
-        log_debug("function run receive a signal ");
+
+        if (is_stopped() || m_queue.empty())
+            break;
+
         auto task = std::move(m_queue.front());
         log_debug("TaskDispatcher take a task from queue: %x", task.get());
 
@@ -71,4 +87,7 @@ void TaskDispatcher::run()
         log_debug("ready to handle task: %x", task.get());
         handle(std::move(task));
     }
+    log_debug("taskdispatcher over");
+    
+    Singleton<ThreadPool>::Instance()->stop();
 }

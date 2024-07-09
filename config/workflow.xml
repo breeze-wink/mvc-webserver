@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<workflow>
-    <work id="1" switch="off">
-        <plugin name="echo_plugin.so" switch="on" />
-    </work>
-    <work id="2" switch="off">
-        <plugin name="echo_plugin.so" switch="on" />
-    </work>
-</workflow>

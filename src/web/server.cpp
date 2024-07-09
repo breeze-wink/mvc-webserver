@@ -142,7 +142,7 @@ string Server::handle(const Request& req)
         methodname = arr[1];
     }
 
-    log_debug("classname = %s, methodname = %s", classname.c_str(), methodname.c_str());
+    // log_debug("classname = %s, methodname = %s", classname.c_str(), methodname.c_str());
 
     auto factory = Singleton<reflect::ClassFactory>::Instance();
 
@@ -190,7 +190,6 @@ string Server::handle(const Request& req)
         return resp.data();
     }
 
-    log_error("Failed to call");
     return Response::page_not_found();
 }
 

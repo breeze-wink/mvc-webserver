@@ -20,7 +20,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g -fPIC")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
 
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
-set(plugin_output_Dir ${CMAKE_CURRENT_SOURCE_DIR}/plugin)
 
 add_subdirectory(src)
 add_subdirectory(test)

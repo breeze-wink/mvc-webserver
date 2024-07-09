@@ -26,7 +26,6 @@ namespace breeze
         private: \
         classname() = default; \
         classname(const classname &) = delete; \
-        classname & operator = (const classname &) = delete; \
-        ~classname() = default;
+        classname & operator = (const classname &) = delete; 
     }
 }

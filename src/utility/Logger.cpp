@@ -1,6 +1,7 @@
 #include "Logger.h"
 #include <cerrno>
 #include <cstring>
+#include <mutex>
 #include <sstream>
 #include <iostream>
 
@@ -113,6 +114,8 @@ void Logger::log(Level level, const char* file, int line, const char* format, ..
     oss << "\n";
 
     const string& str = oss.str();
+
+    std::unique_lock<std::mutex> lck(m_mutex);
 
     m_ofs << str;
     m_ofs.flush();

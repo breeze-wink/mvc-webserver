@@ -13,7 +13,7 @@ using namespace breeze::task;
 
 void SocketHandler::listen(const string& ip, int port)
 {
-    m_server = new Serversocket(ip, port);
+    m_server = std::make_unique<Serversocket>(ip, port);
 }
 void SocketHandler::attach(int sockfd)
 {
@@ -24,34 +24,46 @@ void SocketHandler::detach(int sockfd)
     m_epoll.del(sockfd);
 }
 
+bool SocketHandler::is_stopped() const
+{
+    return m_stop;
+}
+
+void SocketHandler::stop()
+{
+    m_stop.store(true);
+    m_server -> close();
+}
+
 void SocketHandler::handle(int max_conn, int timeout)
 {
     m_epoll.create(max_conn);
     u_int32_t events = EPOLLIN|EPOLLHUP|EPOLLERR;
     m_epoll.add(m_server -> fd(), events);
 
-    while (true) 
+    while (! is_stopped()) 
     {
         int num = m_epoll.wait(timeout); 
-        if (num < 0) {
-        if (errno == EINTR) 
+        if (num < 0) 
         {
-            // epoll_wait 被信号中断，继续重试
-            continue;
-        } 
-        else 
-        {
-            log_error("epoll wait error: errno = %d, errmsg = %s", errno, strerror(errno));
-            break;
+            if (errno == EINTR) 
+            {
+                // epoll_wait 被信号中断，继续重试
+                continue;
+            } 
+            else 
+            {
+                log_error("epoll wait error: errno = %d, errmsg = %s", errno, strerror(errno));
+                break;
+            }
         }
-    }
         else if (num == 0)
         {
             continue;
         }
         for (int i = 0; i < num; ++ i)
         {
-            if (m_epoll.get_fd(i) == m_server -> fd())
+            if (m_epoll.get_fd(i) == m_server -> fd()) // accepter
             {
                 //服务端套接字可读
                 int connfd = m_server -> accept();
