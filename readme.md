@@ -12,7 +12,9 @@
 
 ### GET请求功能演示
   可根据URL地址访问，并返回相应的页面。
+
   <img src="index.png" alt="" width="400">
+
 ### POST请求功能演示(实现了json和file上传功能)
 
 <img src="file_upload1.png" alt="" width="400">
@@ -32,7 +34,7 @@
 3. 线程池将 **HttpTask** 分配给工作线程，线程开始进行 **HttpTask** 处理。
 4. 在 **HttpTask** 中，接收HTTP请求，并调用 **Web** 组件中的 **Request** 解析，分别解析header和body。
 5. **Request** 解析完毕后，交给 **Web** 组件中的 **Server**， **Server** 负责处理 **Request**，自动路由，生成相应的 **Response**。
-   - 支持处理的类型有三种：
+   支持处理的类型有三种：
      - a. 静态绑定处理方法与具体的path。
      - b. 直接请求具体路径的文件，支持html、js、png、jpg等。
      - c. 基于反射注册的控制器和方法，与 **App** 组件交互。
