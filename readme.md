@@ -12,12 +12,12 @@
 
 ### GET请求功能演示
   可根据URL地址访问，并返回相应的页面。
-  ![alt text](index.png)
-### POST请求功能演示
+  <img src="index.png" alt="" width="400">
+### POST请求功能演示(实现了json和file上传功能)
 
-![alt text](file_upload1.png)
-![alt text](file_upload2.png)
-![alt text](file_upload3.png)
+<img src="file_upload1.png" alt="" width="400">
+<img src="file_upload2.png" alt="" width="400">
+<img src="file_upload3.png" alt="" width="400">
 
 ## 各线程工作
 
