@@ -184,9 +184,9 @@ string Request::user_host() const
     return header("Host");
 }
 
-int Request::content_length() const
+long Request::content_length() const
 {
-    return m_headers.find("Content-Length") != m_headers.end() ? std::stoi(header("Content-Length")) : 0;
+    return m_headers.find("Content-Length") != m_headers.end() ? std::stol(header("Content-Length")) : 0;
 }
 
 void Request::show() const

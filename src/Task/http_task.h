@@ -28,7 +28,7 @@ namespace breeze
             Request m_req;
             int m_total_len;
             int m_head_len;
-            int m_body_len;
+            long m_body_len;
             int m_body_idx;
             char* m_body;
         };

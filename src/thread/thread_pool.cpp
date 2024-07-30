@@ -1,15 +1,6 @@
 #include "thread_pool.h"
 #include <Logger.h>
-#include <mutex>
 using namespace breeze::thread;
-
-ThreadPool::~ThreadPool()
-{
-    for(auto thread : m_pool)
-    {
-        delete thread;
-    }
-}
 
 void ThreadPool::create(int threads)
 {
@@ -52,12 +43,3 @@ void ThreadPool::assign(std::shared_ptr<Task> task)
     auto thread = get();
     thread->assign(task);
 }
-void ThreadPool::stop()
-{
-    std::unique_lock<std::mutex> lck(m_mutex);
-    for (auto thread : m_pool)
-    {
-        thread->join();
-    }
-}
-

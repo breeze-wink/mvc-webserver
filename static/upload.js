@@ -16,8 +16,7 @@ document.getElementById('uploadForm').addEventListener('submit', function (event
     });
 
     xhr.onload = function () {
-        if (xhr.status === 200) 
-        {
+        if (xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
             progressBarFill.style.width = '100%';
             progressBarFill.textContent = '100%';
@@ -28,10 +27,9 @@ document.getElementById('uploadForm').addEventListener('submit', function (event
                     文件大小：<span class="file-info">${(response.size / 1024).toFixed(2)} KB</span>
                 </div>
             `;
-        } 
-        else {
+        } else {
             document.getElementById('uploadResult').innerHTML = `
-                <div class="success-message" style="background-color: #f2dede; color: #a94442; border-color: #ebccd1;">
+                <div class="error-message">
                     文件上传失败，请重试。
                 </div>
             `;

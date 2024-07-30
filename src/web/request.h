@@ -33,7 +33,7 @@ namespace breeze::web
         string user_agent() const;
         string user_host() const;
 
-        int content_length() const;
+        long content_length() const;
         void show() const;
 
     private:
